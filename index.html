@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script src="w3data.js"></script>
     <title>Include</title>
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/cb95e7a1ff.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <div w3-include-html="header.html"></div>
+    <input type="checkbox" name="teste" id="click" checked="true" style="display:none">
+    <label for="click" >
+        <i class="fas fa-bars"></i>
+    </label>
 
     
+    <div w3-include-html="header.html"></div>
 
-    <div w3-include-html="footer.html"></div>
+    <div w3-include-html="footer.html" id="footer"></div>
 
     <script>
         w3IncludeHTML();
